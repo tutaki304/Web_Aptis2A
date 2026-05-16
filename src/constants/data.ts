@@ -32,6 +32,17 @@ export const partners = [
   { name: "Các trường ĐH, CĐ và THPT khác", abbr: "...", color: "bg-slate-400", photo: "" },
 ];
 
+export const students = [
+  { name: "Nguyễn Văn A", badge: "Aptis B2", photo: "" },
+  { name: "Trần Thị B", badge: "Aptis B1", photo: "" },
+  { name: "Lê Minh C", badge: "Aptis C1", photo: "" },
+  { name: "Phạm Thị D", badge: "Aptis B2", photo: "" },
+  { name: "Hoàng Văn E", badge: "Aptis B1", photo: "" },
+  { name: "Võ Thị F", badge: "Aptis B2", photo: "" },
+  { name: "Đinh Thị G", badge: "Aptis B2", photo: "" },
+  { name: "Bùi Văn H", badge: "Aptis C1", photo: "" },
+];
+
 export const projects = [
   { id: 1, title: "THCS/PT Lê Lợi - Aptis B1 cho học sinh", size: "123 học viên, 6 lớp", result: "90,3% học viên đạt mục tiêu đầu ra, 25% vượt chỉ tiêu lên B2" },
   { id: 2, title: "THCS/PT Lê Lợi - Aptis B1 cho GV, NV", size: "54 học viên", result: "100% học viên đạt mục tiêu đầu ra, 24% vượt chỉ tiêu lên B2" },

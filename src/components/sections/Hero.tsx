@@ -40,6 +40,17 @@ export default function Hero() {
               <span className="text-[#1a2456]">nếu học sai cách!</span>
             </h1>
 
+            {/* Cam kết đầu ra */}
+            <div className="inline-flex items-center gap-3 bg-gradient-to-r from-emerald-500 to-green-400 text-white px-5 py-3 rounded-2xl shadow-lg shadow-emerald-500/30 mb-5 w-fit">
+              <ShieldCheck size={22} className="shrink-0" />
+              <span className="font-extrabold text-lg tracking-tight leading-none">
+                Cam kết đầu ra 100%
+              </span>
+              <span className="text-emerald-100 text-sm font-medium border-l border-emerald-300/60 pl-3 leading-tight">
+                Không đạt — hoàn học phí
+              </span>
+            </div>
+
             {/* Sub */}
             <p className="text-slate-600 text-base leading-relaxed mb-7 max-w-lg">
               Khóa Aptis ESOL 12 buổi giúp bạn học đúng trọng tâm, luyện sát format đề và được hỗ trợ theo lộ trình phù hợp.
