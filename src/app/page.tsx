@@ -1,10 +1,14 @@
 import Navbar from "@/components/ui/Navbar";
 import Hero from "@/components/sections/Hero";
-import Features from "@/components/sections/Features";
+import FeatureCards from "@/components/sections/FeatureCards";
 import Courses from "@/components/sections/Courses";
-import Testimonials from "@/components/sections/Testimonials";
+import LearningPath from "@/components/sections/LearningPath";
+import PartnersSection from "@/components/sections/PartnersSection";
+import StatsSection from "@/components/sections/StatsSection";
+import ProjectsSection from "@/components/sections/ProjectsSection";
+import BenefitsSection from "@/components/sections/BenefitsSection";
 import FAQ from "@/components/sections/FAQ";
-import CTA from "@/components/sections/CTA";
+import ContactSection from "@/components/sections/ContactSection";
 import Footer from "@/components/sections/Footer";
 
 export default function Home() {
@@ -13,11 +17,15 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
-        <Features />
+        <FeatureCards />
         <Courses />
-        <Testimonials />
+        <LearningPath />
+        <PartnersSection />
+        <StatsSection />
+        <ProjectsSection />
+        <BenefitsSection />
         <FAQ />
-        <CTA />
+        <ContactSection />
       </main>
       <Footer />
     </>
