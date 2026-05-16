@@ -14,13 +14,15 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const navLinks = [
+  const navLinks: { name: string; href: string; external?: boolean }[] = [
     { name: "Khóa học", href: "#courses" },
     { name: "Lộ trình", href: "#roadmap" },
     { name: "Đối tác", href: "#partners" },
     { name: "Feedback", href: "#testimonials" },
     { name: "FAQ", href: "#faq" },
     { name: "Liên hệ", href: "#contact" },
+    { name: "Luyện thi", href: "https://test.onthiaptis.com/", external: true },
+    { name: "Đề thi thử", href: "https://dethi.onthiaptis.com/library", external: true },
   ];
 
   return (
@@ -36,7 +38,18 @@ export default function Navbar() {
 
         <nav className="hidden lg:flex items-center gap-6">
           {navLinks.map((link) => (
-            <Link key={link.name} href={link.href} className="text-sm font-semibold text-slate-600 hover:text-blue-600 transition-colors">{link.name}</Link>
+            <Link
+              key={link.name}
+              href={link.href}
+              {...(link.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+              className={`text-sm font-semibold transition-colors ${
+                link.external
+                  ? "text-blue-600 hover:text-blue-700 border border-blue-200 hover:border-blue-400 px-3 py-1 rounded-lg bg-blue-50 hover:bg-blue-100"
+                  : "text-slate-600 hover:text-blue-600"
+              }`}
+            >
+              {link.name}
+            </Link>
           ))}
         </nav>
 
@@ -54,7 +67,17 @@ export default function Navbar() {
       {mobileMenuOpen && (
         <div className="lg:hidden absolute top-full left-0 w-full bg-white border-t border-slate-100 shadow-xl py-4 px-4 flex flex-col gap-2 max-h-[80vh] overflow-y-auto">
           {navLinks.map((link) => (
-            <Link key={link.name} href={link.href} onClick={() => setMobileMenuOpen(false)} className="text-base font-semibold text-slate-700 p-3 hover:bg-blue-50 rounded-xl">
+            <Link
+              key={link.name}
+              href={link.href}
+              {...(link.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+              onClick={() => setMobileMenuOpen(false)}
+              className={`text-base font-semibold p-3 rounded-xl ${
+                link.external
+                  ? "text-blue-600 bg-blue-50 hover:bg-blue-100"
+                  : "text-slate-700 hover:bg-blue-50"
+              }`}
+            >
               {link.name}
             </Link>
           ))}
