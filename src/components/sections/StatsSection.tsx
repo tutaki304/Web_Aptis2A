@@ -2,10 +2,10 @@ import SlideUp from "@/components/animations/SlideUp";
 import { Users, GraduationCap, TrendingUp, Target } from "lucide-react";
 
 const stats = [
-  { icon: Users,         value: "400+",   label: "Học viên đã và đang học",        color: "text-blue-600",    border: "border-blue-100",   bg: "bg-blue-50" },
-  { icon: GraduationCap, value: "5+",     label: "Chương trình đào tạo",           color: "text-violet-600",  border: "border-violet-100", bg: "bg-violet-50" },
+  { icon: Users,         value: "1.000+", label: "Học viên đã đào tạo",            color: "text-blue-600",    border: "border-blue-100",   bg: "bg-blue-50" },
+  { icon: GraduationCap, value: "500+",   label: "Học viên đang học",              color: "text-violet-600",  border: "border-violet-100", bg: "bg-violet-50" },
   { icon: Target,        value: "90.3%",  label: "Học viên đạt mục tiêu đầu ra",   color: "text-emerald-600", border: "border-emerald-100",bg: "bg-emerald-50" },
-  { icon: TrendingUp,    value: "75%",    label: "Học viên vượt mục tiêu lên B2",  color: "text-orange-500",  border: "border-orange-100", bg: "bg-orange-50" },
+  { icon: TrendingUp,    value: "25%",    label: "Học viên vượt chỉ tiêu lên B2",  color: "text-orange-500",  border: "border-orange-100", bg: "bg-orange-50" },
 ];
 
 export default function StatsSection() {

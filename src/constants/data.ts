@@ -24,12 +24,12 @@ export const learningSteps = [
 ];
 
 export const partners = [
-  { name: "Trường ĐH Kinh tế TP.HCM – UEH", abbr: "UEH", color: "bg-blue-600", photo: "" },
-  { name: "Trường ĐH Quốc tế Sài Gòn – SIU", abbr: "SIU", color: "bg-indigo-600", photo: "" },
-  { name: "Trường ĐH Phan Thiết – UPT", abbr: "UPT", color: "bg-sky-600", photo: "" },
-  { name: "Trường ĐH Đồng Nai – DNU", abbr: "DNU", color: "bg-violet-600", photo: "" },
-  { name: "Trường THCS/PT Lê Lợi", abbr: "LL", color: "bg-orange-500", photo: "" },
-  { name: "Các trường ĐH, CĐ và THPT khác", abbr: "...", color: "bg-slate-400", photo: "" },
+  { name: "Trường ĐH Kinh tế TP.HCM – UEH", abbr: "UEH", color: "bg-blue-600",   photo: "/images/partners/ueh.jpg"      },
+  { name: "Trường ĐH Quốc tế Sài Gòn – SIU", abbr: "SIU", color: "bg-indigo-600", photo: "/images/partners/siu.png"      },
+  { name: "Trường ĐH Phan Thiết – UPT",       abbr: "UPT", color: "bg-sky-600",    photo: "/images/partners/upt.png"      },
+  { name: "Trường ĐH Đồng Nai – DNU",         abbr: "DNU", color: "bg-violet-600", photo: "/images/partners/dhdongnai.jpg"},
+  { name: "Trường THCS/PT Lê Lợi",            abbr: "LL",  color: "bg-orange-500", photo: "/images/partners/leloi.jpg"    },
+  { name: "Các trường ĐH, CĐ và THPT khác",   abbr: "...", color: "bg-slate-400",  photo: ""                              },
 ];
 
 export const students = [
@@ -44,7 +44,7 @@ export const students = [
 ];
 
 export const projects = [
-  { id: 1, title: "THCS/PT Lê Lợi - Aptis B1 cho học sinh", size: "123 học viên, 6 lớp", result: "90,3% học viên đạt mục tiêu đầu ra, 25% vượt chỉ tiêu lên B2" },
+  { id: 1, title: "THCS/PT Lê Lợi - Aptis B1 cho học sinh", size: "1.000+ học viên, 15+ lớp", result: "90,3% học viên đạt mục tiêu đầu ra, 25% vượt chỉ tiêu lên B2" },
   { id: 2, title: "THCS/PT Lê Lợi - Aptis B1 cho GV, NV", size: "54 học viên", result: "100% học viên đạt mục tiêu đầu ra, 24% vượt chỉ tiêu lên B2" },
   { id: 3, title: "THCS/PT Lê Lợi - Aptis B2/C1 cho GV TA", size: "11 học viên", result: "100% học viên đạt mục tiêu đầu ra" },
   { id: 4, title: "UEH Mekong - Aptis B2 cho HV cao học", size: "Nhiều đợt đào tạo", result: "Gần 85% học viên đạt mục tiêu đầu ra" }

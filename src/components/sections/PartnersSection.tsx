@@ -5,9 +5,9 @@ import Image from "next/image";
 function PartnerCard({ name, abbr, color, photo }: { name: string; abbr: string; color: string; photo: string }) {
   return (
     <div className="flex flex-col bg-white border border-slate-200 rounded-2xl shadow-sm mx-3 shrink-0 w-52 overflow-hidden">
-      <div className="w-full h-32 relative">
+      <div className="w-full h-32 relative bg-white flex items-center justify-center p-4">
         {photo ? (
-          <Image src={photo} alt={name} fill className="object-cover" />
+          <Image src={photo} alt={name} fill className="object-contain p-3" />
         ) : (
           <div className={`${color} w-full h-full flex items-center justify-center`}>
             <span className="text-white text-2xl font-extrabold tracking-widest opacity-80">{abbr}</span>
